@@ -48,7 +48,7 @@ resource "azurerm_postgresql_flexible_server" "db" {
   location               = azurerm_resource_group.rg.location
   version                = "13"
   administrator_login    = "${var.dbAdmin}"
-  administrator_password = "${var.dbPassword}"
+  administrator_password = "P@ssw0rd"
   zone                   = "1"
 
   storage_mb = 32768
